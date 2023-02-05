@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/home.css') }}">
+
+    <title>MelaMarket</title>
+</head>
+
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="hero">
+        <img src="static\images\friendshavefun.webp" alt="Smiling friends" />
+        <div class="overlay">
+            <div class="text-container">
+                <h1 class="header-text1">Create. Buy. Share.</h1>
+                <p class="header-text">Buy from & connect with people who share your values and style</p>
+                <br>
+                <p class="header-text">Support BIPOC creators</p>
+                <a href="#">
+                    <button type="button" class="header-button">Sign up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project section -->
+
+    <div class="container">
+        <div class="left-side">
+            <img src="static\images\green_dress.jpg" alt="A woman in a green dress">
+        </div>
+        <div class="right-side">
+            <div id="green_text">
+                <h1>Get personalized recommendations</h1>
+                <br>
+                <p>Find looks & outfits you love without putting "Black" or "Asian" or "POC" in the search bar</p>
+                <br>
+            </div>
+
+            <a>
+                <button type="button" class="project-button_green">Explore</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="static\images\blackCreatorsmatter.jpg" alt="A Black Lives Matter poster">
+        </div>
+        <div class="right-side">
+            <div id="yellow_text">
+                <h1>Support Black & POC creators</h1>
+                <br>
+                <p>View what your favorite creators are making & wearing. Buy straight from the source.</p>
+                <br>
+            </div>
+            <a>
+                <button type="button" class="project-button_yellow">Support</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="static\images\bar_pic.jpg" alt="Women in a bar">
+        </div>
+        <div class="right-side">
+            <div id="red_text">
+                <h1>Meet fellow BIPOC shopaholics</h1>
+                <br>
+                <p>Request to shop with fellow users and get notified by text if they accept.</p>
+                <br>
+            </div>
+            <a>
+                <button type="button" class="project-button_red">Connect</button>
+            </a>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

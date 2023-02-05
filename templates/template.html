@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    <title> MelaMarket </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="{{ url_for('home') }}">
+                    <img src="static\images\shopping_cart_logo.png" alt="shopping cart" />
+                </a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Shop by ZipCode</a></li>
+                <li><a href="#">Login</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <footer>
+        <h2>Created for Black Wings Hacks 2023</h2>
+        <div class="names">
+            <p>Afeya Jahin</p>
+            <p>Angel T. Ebebi</p>
+            <p>Cynthia Akanaga</p>
+            <p>Sabina Miezah</p>
+        </div>
+    </footer>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

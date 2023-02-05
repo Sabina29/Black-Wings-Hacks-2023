@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',    filename='css/about.css') }}">
+
+  <title>About MelaMarket</title>
+</head>
+
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+  <div class="about-section">
+    <h1> About
+      <span class="brandname">MelaMarket</span>
+    </h1>
+
+    <p>Are you tired of shopping in a world that doesn't reflect the beauty and diversity of our community? Say goodbye
+      to bland, one-size-fits-all shopping experiences and hello to MelaMarket!</p>
+
+    <p>Our app is specifically designed for BIPOC shoppers and offers a fresh, customized, and community-driven approach
+      to shopping. With features inspired by Pinterest and the option to add your purchases to your own storefront,
+      shopping has never been so personal and fun!</p>
+
+    <p>We also use Google Maps API to connect you with local Black-owned businesses, so you can support your community
+      and get the products you need. Our filtering options make it easy for you to find what's relevant and helpful in
+      your region.</p>
+
+    <p>Join the MelaMarket revolution and experience shopping like never before. Let's make every purchase a celebration
+      of our community and culture!</p>
+  </div>
+
+
+  {% endblock %}
+</body>
+</body>
+
+</html>

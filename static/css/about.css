@@ -1,0 +1,37 @@
+/* body {
+    background: linear-gradient(to right, #EAC151, #346751, #C84B31);
+} */
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-section h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.brandname {
+    display: inline-block;
+    background-image: linear-gradient(to right,#EAC151, #346751, #C84B31);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* .market {
+    color: #EAC151;
+}
+
+.mela,
+.market {
+
+    display: inline-block;
+} */
+
+.about-section p {
+    font-size: 27px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
