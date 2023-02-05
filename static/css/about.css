@@ -1,6 +1,6 @@
-body {
+/* body {
     background: linear-gradient(to right, #EAC151, #346751, #C84B31);
-}
+} */
 
 .about-section {
     text-align: center;
@@ -12,11 +12,15 @@ body {
     margin-bottom: 20px;
 }
 
-.mela {
-    color: #C84B31;
+.brandname {
+    display: inline-block;
+    background-image: linear-gradient(to right,#EAC151, #346751, #C84B31);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-.market {
+/* .market {
     color: #EAC151;
 }
 
@@ -24,7 +28,7 @@ body {
 .market {
 
     display: inline-block;
-}
+} */
 
 .about-section p {
     font-size: 27px;
