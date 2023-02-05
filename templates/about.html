@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',    filename='css/about.css') }}">
+
   <title>About MelaMarket</title>
 </head>
 
@@ -12,10 +14,25 @@
   {% extends "template.html" %}
   {% block content %}
 
-  <h1> About Flask </h1>
-  <p> Flask is a micro web framework written in Python.</p>
-  <p> Applications that use the Flask framework include Pinterest,
-    LinkedIn, and the community web page for Flask itself.</p>
+  <div class="about-section">
+    <h1> What is
+      <span class="mela">Mela</span>
+      <span class="market">Market</span>
+      ?
+    </h1>
+    <p>MelaMarket is a web app that helps people consolidate their spending information and promote transparency in
+      their shopping habits. With the goal of reducing online shopping, MelaMarket offers a Pinterest-inspired
+      interface, where users can customize and edit their own pages. With the option to add purchases to their
+      storefront, MelaMarket aims to make shopping a more social and community-building activity. </p>
+      
+    <p>MelaMarket also incorporates Google Maps API to encourage users to support local Black-owned businesses,
+      filtering options to allow users to see the most helpful products in their regions, and a focus on making the
+      consumer experience more positive and sustainable. Additionally, MelaMarket has a borrowing and lending feature to
+      allow users to share goods with one another.</p>
+
+    <p>Join the MelaMarket community and make shopping a more conscious and positive experience.</p>
+  </div>
+
 
   {% endblock %}
 </body>
