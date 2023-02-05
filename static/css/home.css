@@ -1,0 +1,156 @@
+body {
+    background-color: #000;
+}
+
+/* Start of Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-left: 10%;
+    width: 50%;
+}
+
+.hero .header-text {
+    color: #fff;
+    font-size: 39px;
+}
+
+.hero .header-text1 {
+    color: #fff;
+    font-size: 95px;
+}
+
+.hero .header-button {
+    border: none;
+    background-color: #EAC151;
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header-button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .hero .text-container {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero .header-text {
+        font-size: 24px;
+    }
+
+    .hero .header-button {
+        margin: 20px auto;
+    }
+}
+
+/* End of Hero Section */
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.right-side {
+    width: 50%;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.right-side h1 {
+    font-size: 40px;
+}
+
+.right-side p {
+    font-size: 27px;
+}
+
+.right-side #green_text{
+    color: #346751;
+}
+
+.right-side #yellow_text{
+    color: #EAC151;
+}
+
+.right-side #red_text{
+    color: #C84B31;
+}
+
+button {
+    padding: 30px 40px;
+    font-size: 24px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.project-button_green{
+    background-color: #346751;
+}
+
+.project-button_yellow{
+    background-color: #EAC151;
+}
+
+.project-button_red{
+    background-color: #C84B31;
+}
+
+button:hover {
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
