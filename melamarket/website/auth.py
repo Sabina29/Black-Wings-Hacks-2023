@@ -2,10 +2,10 @@ from flask import Blueprint
 
 auth= Blueprint('auth', __name__)
 
-@auth.route('/explore')
-def explore():
-    return "<p>Your Feed</p>"
+@auth.route('/login')
+def login():
+    return "<p>Login</p>"
 
-@auth.route('/your-posts')
-def yourPosts():
-    return "<p>Your Posts</p>"
+@auth.route('/logout')
+def logout():
+    return "<p>Logout</p>"
